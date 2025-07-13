@@ -7,6 +7,7 @@
 <img width="1343" height="601" alt="img" src="https://github.com/user-attachments/assets/73be5466-3b5a-4fee-af1a-f8f59dc23f19" />
 
 ♻️ GreenTech - E-commerce Mobile
+
 Este projeto é um aplicativo mobile de e-commerce para a "GreenTech", uma loja fictícia de produtos eletrônicos. O app foi desenvolvido como um aplicativo híbrido para Android usando Cordova, com a interface construída em Framework7, HTML, CSS e jQuery.
 
 🔥 Funcionalidades
@@ -52,4 +53,5 @@ Este projeto é um aplicativo mobile de e-commerce para a "GreenTech", uma loja 
 ```
 
 🎯 Objetivo
+
 Este projeto foi desenvolvido para fins de estudo e portfólio, com o objetivo de demonstrar a criação de um aplicativo de e-commerce funcional e com design moderno, utilizando tecnologias híbridas para o desenvolvimento mobile.
