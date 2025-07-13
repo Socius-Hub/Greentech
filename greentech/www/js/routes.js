@@ -23,13 +23,15 @@ var app = new Framework7({
       animate: false,
 	  on: {
 		pageBeforeIn: function (event, page) {
-		// fazer algo antes da página ser exibida
+		  $("#menuPrincipal").show("fast");
 		},
 		pageAfterIn: function (event, page) {
 		// fazer algo depois da página ser exibida
 		},
 		pageInit: function (event, page) {
 		// fazer algo quando a página for inicializada
+    //app.views.main.router.navigate('/carrinho/');
+    //app.views.main.router.navigate('/detalhes/');
      $.getScript('js/index.js');
 
          var swiper = new Swiper(".mySwiper", {
@@ -131,7 +133,7 @@ var app = new Framework7({
 		},
 	  }
     },
-        {
+    {
       path: '/link4/',
       url: 'link4.html',
       animate: false,
@@ -149,9 +151,50 @@ var app = new Framework7({
 		// fazer algo antes da página ser removida do DOM
 		},
 	  }
+    },  
+      {
+      path: '/detalhes/',
+      url: 'detalhes.html',
+      animate: false,
+	  on: {
+		pageBeforeIn: function (event, page) {
+		// fazer algo antes da página ser exibida
+     $("#menuPrincipal").hide("fast");
+		},
+		pageAfterIn: function (event, page) {
+		// fazer algo depois da página ser exibida
+		},
+		pageInit: function (event, page) {
+		$.getScript('js/detalhes.js');
+		},
+		pageBeforeRemove: function (event, page) {
+		// fazer algo antes da página ser removida do DOM
+		},
+	  }
+    },
+    {
+      path: '/carrinho/',
+      url: 'carrinho.html',
+      options: {
+       transition: 'f7-push',
+    },
+	  on: {
+		pageBeforeIn: function (event, page) {
+		// fazer algo antes da página ser exibida
+     $("#menuPrincipal").hide("fast");
+		},
+		pageAfterIn: function (event, page) {
+		// fazer algo depois da página ser exibida
+		},
+		pageInit: function (event, page) {
+		$.getScript('js/carrinho.js');
+		},
+		pageBeforeRemove: function (event, page) {
+		// fazer algo antes da página ser removida do DOM
+		},
+	  }
     },
   ],
-  
   // ... other parameters
 });
 
